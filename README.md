@@ -10,10 +10,10 @@ To build the executable program, `depgen`, clone or download this project and do
 $ mkdir build
 $ make
 ```
-from its root[^1]. On running the executable from the root of any C++ project, it
-will scan the project's source files for `#include` commands and (try to)
-write a file -- called `.depend` by default -- consisting of a list of dependencies
-suitable for inclusion in a makefile.
+from its root<sup>[1](#footnote1)</sup>. On running the executable from the root 
+of any C++ project, it will scan the project's source files for `#include` commands 
+and (try to) write a file -- called `.depend` by default -- consisting of a list of 
+dependencies suitable for inclusion in a makefile.
 
 
 ## Options
@@ -47,4 +47,6 @@ the locations of object files with an input file.
 3. Test `trim(fs::path)` on a path not in the project root.
 
 
-[^1]: Only tested on macOS Catalina with clang and C++17.
+---
+
+<a name="footnote1">1.</a> Only tested on macOS Catalina with clang and C++17.
